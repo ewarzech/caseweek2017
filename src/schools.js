@@ -93,13 +93,7 @@ function Schools() {
 			'stars': 3,
 			'students_count': 2000
 		},
-    {
-      'name': 'Szkoła Zawodowa',
-      'photo': 'http://photos.nasza-klasa.pl/9042/130/other/std/31044bc43c.jpeg',
-      'stars': 3,
-      'students_count': 5000
-    },
-  ],
+      ],
 	'university': [],
 	'other': []
   };
