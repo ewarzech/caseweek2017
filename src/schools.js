@@ -80,7 +80,26 @@ function Schools() {
 			'students_count': 4612
 		},
 	],
-	'middle': [],
+	'middle': [
+    {
+			'name': 'I Liceum Profilowane',
+			'photo': 'http://photos.nasza-klasa.pl/9042/130/other/std/31044bc43c.jpeg',
+			'stars': 5,
+			'students_count': 3000
+		},
+    {
+			'name': 'Technikum',
+			'photo': 'http://photos.nasza-klasa.pl/9042/130/other/std/31044bc43c.jpeg',
+			'stars': 3,
+			'students_count': 2000
+		},
+    {
+      'name': 'Szkoła Zawodowa',
+      'photo': 'http://photos.nasza-klasa.pl/9042/130/other/std/31044bc43c.jpeg',
+      'stars': 3,
+      'students_count': 5000
+    },
+  ],
 	'university': [],
 	'other': []
   };
@@ -105,7 +124,7 @@ function Schools() {
   this.ul_schools_list_clear = function() {
 	this.ul_schools_list.empty();
   }
-  
+
   this.render_schools = function(schools_list) {
 	//https://plugins.jquery.com/jquery-tmpl/
 	for(var i = 0; i < schools_list.length; i++) {
@@ -113,7 +132,7 @@ function Schools() {
 	}
 	this.section_schools_list.removeClass('hidden');
   }
-  
+
   this.get_schools = function(name) {
 	return this.schools[name];
   }
@@ -123,5 +142,3 @@ window.onload = function() {
   var schools = new Schools();
   schools.init();
 }
-
-
